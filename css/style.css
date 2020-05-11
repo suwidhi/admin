@@ -46,7 +46,7 @@ section.header{
 }
 
 .logo .title {
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 21px;
     font-weight: bold;
 
@@ -230,6 +230,8 @@ section.header{
 .body {
     flex: 1;
     display: flex;
+
+    overflow: hidden;
 }
 
 .body aside {
@@ -380,6 +382,41 @@ main .head .column:nth-child(2){
     color: var(--background);
 }
 
+main .content.listview {
+    display: flex;
+    flex-direction: column;
+}
+
+main .content.listview .card {
+    width: auto;
+    margin-bottom: 14px;
+}
+
+main .content.content.listview .monthly-stat {
+    height: auto;
+}
+
+main .content.listview .card-body {
+    padding-bottom: 14px;
+}
+
+main .content.listview .stat-item {
+    width: 270px;
+    display: inline-flex;
+}
+
+main .content.listview .stat-title {
+    margin-right: 8px;
+}
+
+main .content.listview .agenda {
+    height: auto;
+}
+
+main .content.listview .todo {
+    height: auto;
+}
+
 .date-info {
     font-size: 14px;
     color: #7C7C7C;
@@ -418,6 +455,8 @@ main .content {
     padding: 12px;
 
     background-color: #F0F0F0;
+
+    overflow-y: auto;
 }
 
 .card {
