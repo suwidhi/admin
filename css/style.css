@@ -1,0 +1,684 @@
+:root{
+    --background: #1565C0;
+    --foreground: #FFFFFF;
+}
+
+body, html {
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+
+    font-size: 14px;
+    font-family: 'Ebrima', Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+section.header{
+    position: relative;
+    z-index: 1;
+    height: 48px;
+
+    background-color: var(--foreground);
+    box-shadow: 0px 1px 5px 1px #E8E8E8;
+
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo .dots {
+    height: 17px;
+    width: 17px;
+
+    margin: 0px 10px 0px 16px;
+
+    background-color: var(--background);
+
+    border-radius: 50%;
+}
+
+.logo .title {
+    font-family: 'Poppins';
+    font-size: 21px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+.logo .title span:nth-child(1) {
+    color: #4D4D4D;
+}
+
+.logo .title span:nth-child(2){
+    color: var(--background);
+}
+
+.logo .subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #7C7C7C;
+
+    margin-top: 6px;
+}
+
+.user {
+    margin-left: auto;
+
+    display: flex;
+}
+
+.message, .notification {
+    position: relative;
+
+    height: 48px;
+    width: 48px;
+
+    box-sizing: border-box;
+    border-bottom: 4px solid var(--background);
+
+    font-size: 22px;
+}
+
+.message:hover, .notification:hover {
+    background-color: #E8E8E8;
+}
+
+.message {
+    margin-right: 2px;
+}
+
+.notification {
+
+}
+
+.counter {
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    font-size: 8px;
+    text-align: center;
+    line-height: 11px;
+    color: #FFFFFF;
+
+    right: 10px;
+    top: 10px;
+
+    border-radius: 50%;
+}
+
+.message .counter {
+    background-color: red;
+}
+
+.notification .counter {
+    background-color: #FF7700;
+}
+
+.user-pane {
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+.user-image img {
+    width: 32px;
+}
+
+.user-info {
+
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.user-role {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #737373;
+    font-weight: 300;
+
+    position: relative;
+    top: -3px;
+}
+
+.user-menu {
+    position: relative;
+
+    height: 48px;
+    width: 48px;
+
+    background-color: #F2F2F2;
+}
+
+.user-menu div:first-child {
+    font-size: 20px;
+}
+
+.user-menu div:first-child:hover {
+    background-color: #E8E8E8;
+}
+
+.user-menu .user-menu-list {
+    display: none;
+}
+
+.user-menu.active .user-menu-list {
+    display: initial;
+    width: 160px;
+    padding: 8px;
+
+    position: absolute;
+    right: 12px;
+    top: 60px;
+
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 1px grey;
+}
+
+.user-menu-item {
+    padding: 2px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 2px;
+}
+
+.user-menu-item:hover{
+    background-color: #E8E8E8;
+}
+
+.user-menu-item div[class^='icon'] {
+    height: 24px;
+    width: 24px;
+
+    margin-right: 6px;
+}
+
+.user-menu-item a {
+    font-size: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+}
+
+.body aside {
+    width: 17rem;
+    padding: 8px 16px;
+    box-sizing: border-box;
+
+    background-color: #FAFAFA;
+}
+
+.body aside label {
+    text-transform: uppercase;
+    font-size: 10px;
+
+    margin-bottom: 6px;
+
+    display: block;
+}
+
+.aside-head {
+    position: relative;
+
+    height: 80px;
+}
+
+.aside-head label {
+    font-size: 14px !important;
+    color: #828282 !important;
+}
+
+.aside-head input {
+    text-indent: 8px;
+
+    width: 100%;
+    height: 38px;
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    border: 1px solid #DFDFDF;
+    background-color: #F2F2F2;
+}
+
+.aside-head input:focus {
+    border-color: var(--background);
+    background-color: #FFFFFF;
+    
+    box-shadow: inset 0px 0px 2px 1px #E8E8E8;
+}
+
+.aside-head button{
+    position: absolute;
+    bottom: 15px;
+    right: 0px;
+
+    display: block;
+    height: 38px;
+    width: 38px;
+    border: none;
+    background-color: transparent;
+
+    font-size: 22px;
+}
+
+.aside-body {
+
+}
+
+.aside-body .aside-section {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #7C7C7C;
+}
+
+.aside-menu {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.aside-menu li {
+    font-size: 16px;
+    list-style: none;
+
+    height: 36px;
+    padding: 0px 12px;
+}
+
+.aside-menu li:hover {
+    background-color: #E8E8E8;
+}
+
+.aside-menu a {
+    display: flex;
+    align-items: center;
+
+    line-height: 36px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.aside-menu a div {
+    font-size: 20px;
+
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+}
+
+main {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main .head {
+    height: 99px;
+
+    background-color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0px 24px;
+}
+
+main .head .column:nth-child(1){
+    
+}
+
+main .head .column:nth-child(2){
+    background-color: red;
+
+    margin-top: 32px;
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.main-title {
+    padding: 0px;
+    margin: 0px;
+
+    font-size: 32px;
+    color: var(--background);
+}
+
+.date-info {
+    font-size: 14px;
+    color: #7C7C7C;
+
+    display: flex;
+    align-items: center;
+}
+
+.date-info div {
+    height: 14px;
+    width: 14px;
+    margin-right: 4px;
+
+    font-size: 16px;
+}
+
+.display-option {
+    height: 32px;
+    width: 32px;
+
+    font-size: 18px;
+
+    background-color: #F1F1F1;
+}
+
+.display-option.active {
+    background-color: #E5E5E5;
+}
+
+.display-option:hover {
+    background-color: #DFDFDF;
+}
+
+main .content {
+    flex: 1;
+    padding: 12px;
+
+    background-color: #F0F0F0;
+}
+
+.card {
+    width: 342px;
+    height: 369px;
+
+    margin-right: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+    box-shadow: 1px 0px 5px 1px #E5E5E5;
+
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.card-head {
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+}
+
+.card-info div:first-child {
+    font-size: 22px;
+
+    height: 32px;
+    width: 32px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-menu {
+    height: 32px;
+    width: 32px;
+
+    margin-left: auto;
+    font-size: 22px;
+}
+
+.card-menu a {
+    display: block;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 50%;
+}
+.card-menu a:active {
+    background-color: #E8E8E8;
+}
+
+.card-body {
+    flex: 1;
+
+    overflow-y: auto;
+}
+
+.agenda-item {
+    display: flex;
+    padding: 16px 16px;
+}
+
+.agenda-item:hover {
+    background-color: #E8E8E8;
+}
+
+.agenda-status-time, .agenda-status-warning {
+    display: inline-block;
+    padding: 1px 4px;
+
+    font-size: 10px;
+    color: #FFFFFF;
+    line-height: 12px;
+
+    height: 12px;
+}
+
+.agenda-status-time {
+    background-color: #1565C0;
+}
+
+.agenda-status-warning {
+    background-color: #F44336;
+}
+
+.agenda-control {
+    height: 32px;
+    width: 60px;
+
+    font-size: 24px;
+}
+
+.agenda-control a {
+    display: block;
+
+    height: 100%;
+    width: 100%;
+}
+
+.agenda-control a:active{
+    background-color: #DFDFDF;
+}
+
+.agenda-content {
+    font-size: 14px;
+}
+
+.card-foot {
+    height: 24px;
+}
+
+.card-foot a {
+    display: flex;
+
+    text-decoration: none;
+    color: #1565C0;
+
+    width: max-content;
+    padding: 0px 8px 0px 0px;
+}
+
+.card-foot a:hover {
+    background-color: #E8E8E8;
+}
+
+.card-foot a div {
+    height: 24px;
+    width: 24px;
+
+    font-size: 20px;
+}
+
+.stat-item {
+    padding: 16px 16px 0px 16px;
+}
+
+.stat-title {
+    font-size: 16px;
+}
+
+.stat-content {
+    font-size: 24px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+.stat-content div {
+    height: 24px;
+    width: 24px;
+
+    font-size: 24px;
+}
+
+.todo-item{
+    padding: 0px 16px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #FFFFFF;
+}
+
+.todo-item:first-child {
+    margin-top: 16px;
+}
+
+.todo-item:hover {
+    background-color: #e8e8e8;
+}
+
+.todo-content{
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+}
+
+.todo-content div {
+    font-size: 24px;
+
+    height: 24px;
+    width: 24px;
+
+    margin-right: 16px;
+}
+
+.todo-item a {
+    display: block;
+
+    margin-left: auto;
+}
+
+.todo-item a div {
+    height: 24px;
+    width: 24px;
+
+    font-size: 20px;
+}
+
+#todo-form {
+    display: flex;
+
+    width: 100%;
+}
+
+#todo-form input{
+    flex: 1;
+
+    height: 32px;
+    padding: 0px;
+    margin: 0px;
+
+    border: 1px solid #1565C0;
+    box-sizing: border-box;
+
+    text-indent: 8px;
+}
+
+#todo-form input:focus{
+    box-shadow: inset 0px 0px 1px 1px #1565C0;
+}
+
+#todo-form button {
+    display: flex;
+    align-items: center;
+
+    padding: 0px 8px;
+    margin: 0px;
+
+    height: 32px;
+    border: 1px solid #1565C0;
+    background-color: #1565C0;
+
+    color: #FFFFFF;
+
+    margin-left: 4px;
+}
+
+#todo-form button:hover {
+    opacity: .8;
+}
+
+#todo-form button:active {
+    opacity: 1;
+}
+
+#todo-form button div {
+    height: 18px;
+    width: 18px;
+
+    font-size: 20px;
+}

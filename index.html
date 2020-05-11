@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <section class="header">
+
+    <div class="logo">
+      <div class="dots"></div>
+      <div class="title"><span>The</span> <span>Company</span></div>
+      <div class="subtitle">This is about the company</div>
+    </div>
+
+    <div class="user">
+      <div class="message"><div class="icon-message"></div><span class="counter">4</span></div>
+      <div class="notification"><div class="icon-notification"></div></div>
+      <div class="user-pane">
+        <div class="user-image">
+          <div><img src="/img/profile.jpg" alt="profile image"></div>
+        </div>
+        <div class="user-info">
+          <div class="user-name">Suwidiana Ketut</div>
+          <div class="user-role">Administrator</div>
+        </div>
+      </div>
+      <div class="user-menu">
+        <div class="icon-hamburger" id="user-menu-btn"></div>
+        <div class="user-menu-list">
+          <div class="user-menu-item"><div class="icon-setting"></div><a href="/">Account setting</a></div>
+          <div class="user-menu-item"><div class="icon-power"></div><a href="/">Logout</a></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="body">
+    <aside>
+      <div class="aside-head">
+        <form action="/">
+          <label for="search">Pencarian</label>
+          <input type="text" name="search" id="global-search">
+          <button class="icon-search"></button>
+        </form>
+      </div>
+      <div class="aside-body">
+
+        <div class="aside-section">Bilah navigasi</div>
+        <ul class="aside-menu">
+          <li><a href="/"><div class="icon-home"></div>Dashboard</a></li>
+          <li><a href="/"><div class="icon-manage"></div>Management</a></li>
+        </ul>
+
+        <div class="aside-section">Manajemen Entitas</div>
+        <ul class="aside-menu">
+          <li><a href="/"><div class="icon-people"></div>Pengguna</a></li>
+        </ul>
+
+        <div class="aside-section">Manajemen Barang</div>
+        <ul class="aside-menu">
+          <li><a href="/"><div class="icon-down"></div>Barang Masuk</a></li>
+          <li><a href="/"><div class="icon-up"></div>Barang Keluar</a></li>
+          <li><a href="/"><div class="icon-note"></div>Pencatatan</a></li>
+        </ul>
+
+        <div class="aside-section">Berdasarkan status</div>
+        <ul class="aside-menu">
+          <li><a href="/"><div class="icon-progress"></div>Dalam Proses</a></li>
+          <li><a href="/"><div class="icon-done"></div>Selesai</a></li>
+          <li><a href="/"><div class="icon-cancelled"></div>Dibatalkan</a></li>
+        </ul>
+
+        <div class="aside-section">Menu sistem</div>
+        <ul class="aside-menu">
+          <li><a href="/"><div class="icon-setting"></div>Pengaturan</a></li>
+        </ul>
+
+      </div>
+    </aside>
+    <main>
+      <div class="head">
+        <div class="column">
+          <h1 class="main-title">Dashboard</h1>
+          <div class="date-info">
+            <div class="icon-calendar"></div>
+            <span>16 Mei, 2020</span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="display-option active">
+            <div class="icon-gridview"></div>
+          </div>
+          <div class="display-option">
+            <div class="icon-listview"></div> 
+          </div>
+        </div>
+      </div>
+      <div class="content">
+
+        <div class="monthly-stat card">
+          <div class="card-head">
+            <div class="card-info">
+              <div class="icon-agenda"></div>
+              <span class="card-title">Status Bulanan</span>
+            </div>
+            <div class="card-menu">
+              <a href="/"><div class="icon-setting-inactive"></div></a>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="stat-item">
+              <div class="stat-title">Total barang masuk</div>
+              <div class="stat-content"><div class="icon-down"></div>15</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-title">Total barang keluar</div>
+              <div class="stat-content"><div class="icon-up"></div>12 (80%)</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-title">Tidak bisa / batal</div>
+              <div class="stat-content"><div class="icon-cancelled"></div>2</div>
+            </div>
+          </div>
+
+          <div class="card-foot">
+            <a href="/"><div class="icon-arrow"></div>Ke halaman status</a>
+          </div>
+
+        </div>
+
+        <div class="agenda card">
+          <div class="card-head">
+            <div class="card-info">
+              <div class="icon-agenda"></div>
+              <span class="card-title">Tambahkan agenda</span>
+            </div>
+            <div class="card-menu">
+              <a href="/"><div class="icon-setting-inactive"></div></a>
+            </div>
+          </div>
+          <div class="card-body">
+
+            <div class="agenda-item">
+              <div class="agenda-main">
+                <div class="agenda-status">
+                  <div class="agenda-status-time">12:00</div>
+                  <div class="agenda-status-warning">OVERDUE</div>
+                </div>
+                <div class="agenda-content">
+                  Hari ini kita ada banyak acara seperti makan pizza dan spagethi di restoran mahal.
+                </div>
+              </div>
+              <div class="agenda-control">
+                <a href="/"><div class="icon-agenda-done"></div></a>
+              </div>
+            </div>
+
+              <div class="agenda-item">
+                <div class="agenda-main">
+                  <div class="agenda-status">
+                    <div class="agenda-status-time">14:00</div>
+                  </div>
+                  <div class="agenda-content">
+                    Kita harus menyelesaikan banyak pekerjaan kita hari ini dengan tepat waktu.
+                  </div>
+                </div>
+                <div class="agenda-control">
+                  <a href="/"><div class="icon-agenda-done"></div></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-foot">
+              <a href="/"><div class="icon-plus"></div>Buat agenda baru</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <div class="card-info">
+                <div class="icon-agenda"></div>
+                <span class="card-title">To-do</span>
+              </div>
+              <div class="card-menu">
+                <a href="/"><div class="icon-setting-inactive"></div></a>
+              </div>
+            </div>
+  
+            <div class="card-body">
+              <div class="todo-item">
+                <div class="todo-content"><div class="icon-grabber"></div>
+                  <p>Beli beras</p>
+                </div>
+                <a href="/"><div class="icon-trash"></div></a>
+              </div>
+
+              <div class="todo-item">
+                <div class="todo-content"><div class="icon-grabber"></div>
+                  <p>Beli aqua</p>
+                </div>
+                <a href="/"><div class="icon-trash"></div></a>
+              </div>
+              
+              <div class="todo-item">
+                <div class="todo-content"><div class="icon-grabber"></div>
+                  <p>Beli minyak</p>
+                </div>
+                <a href="/"><div class="icon-trash"></div></a>
+              </div>
+
+              <div class="todo-item">
+                <div class="todo-content"><div class="icon-grabber"></div>
+                  <p>Beli pulsa</p>
+                </div>
+                <a href="/"><div class="icon-trash"></div></a>
+              </div>
+            </div>
+  
+            <div class="card-foot">
+              <form action="/" id="todo-form">
+                <input type="text" name="todo" id="todo">
+                <button><div class="icon-plus-light"></div>Tambah</button>
+              </form>
+            </div>
+  
+          </div>
+      </div>
+      <!-- end of content -->
+    </main>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+</html>
