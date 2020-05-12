@@ -90,14 +90,34 @@ section.header{
 
 .message:hover, .notification:hover {
     background-color: #E8E8E8;
+
+    position: relative;
 }
 
 .message {
     margin-right: 2px;
 }
 
-.notification {
+.messaging.card {
+    position: absolute;
+    right: 0px;
+    top: 60px;
 
+    visibility: hidden;
+    overflow: hidden;
+
+    transition: all 200ms ease-in-out;
+}
+
+.messaging.card.active {
+    visibility: visible;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px 1px #4D4D4D !important;
+}
+
+.notification {
+    position: relative;
 }
 
 .counter {

@@ -10,6 +10,24 @@ user_menu.addEventListener('click', function(){
     }
 });
 
+//messaging and notifications open close behavior
+const pane_open = document.querySelector('.pane-open');
+const pane_close = document.querySelector('.pane-close');
+pane_open.forEach(element => {
+    let target = document.querySelector("." + element.getAttribute('for'));
+    element.addEventListener('click', function() {
+        if(!target.classList.contains('active')) {target.classList.add('active');}
+    });    
+});
+pane_close.forEach(element => {
+    let target = document.querySelector("." + element.getAttribute('for'));
+    message_close.addEventListener('click', function(evt) {
+        evt.stopPropagation();
+        target.classList.remove('active');
+    });
+});
+
+
 //switch display between list and grid
 const display_option = document.querySelectorAll('.display-option');
 display_option.forEach(element => {
