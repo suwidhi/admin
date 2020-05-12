@@ -11,8 +11,8 @@ user_menu.addEventListener('click', function(){
 });
 
 //messaging and notifications open close behavior
-const pane_open = document.querySelector('.pane-open');
-const pane_close = document.querySelector('.pane-close');
+const pane_open = document.querySelectorAll('.pane-open');
+const pane_close = document.querySelectorAll('.pane-close');
 pane_open.forEach(element => {
     let target = document.querySelector("." + element.getAttribute('for'));
     element.addEventListener('click', function() {
@@ -21,7 +21,7 @@ pane_open.forEach(element => {
 });
 pane_close.forEach(element => {
     let target = document.querySelector("." + element.getAttribute('for'));
-    message_close.addEventListener('click', function(evt) {
+    element.addEventListener('click', function(evt) { 
         evt.stopPropagation();
         target.classList.remove('active');
     });

@@ -106,7 +106,7 @@ section.header{
     visibility: hidden;
     overflow: hidden;
 
-    transition: all 200ms ease-in-out;
+    transition: all 80ms ease-in-out;
 }
 
 .messaging.card.active {
@@ -114,6 +114,102 @@ section.header{
 
     background-color: #FFFFFF;
     box-shadow: 0px 0px 5px 1px #4D4D4D !important;
+}
+
+.message-search {
+    position: relative;
+}
+
+.message-search label {
+    display: block;
+
+    font-size: 16px;
+}
+
+.message-search input {
+    padding: 0px;
+    margin: 0px;
+    height: 32px;
+    width: 100%;
+
+    text-indent: 8px;
+
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+.message-search input:focus {
+    box-shadow: inset 0px 0px 1px 1px #1565C0;
+}
+
+.message-search button {
+    padding: 0px;
+    margin: 0px;
+    height: 32px;
+    width: 32px;
+
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    
+    font-size: 20px;
+
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.message-prev {
+    padding: 4px 16px;
+}
+
+.prev-item {
+    display: flex;
+    padding: 8px;
+
+    margin-bottom: 8px;
+}
+
+.prev-item:hover {
+    background-color: #E8E8E8;
+}
+
+.contact-image {
+    height: 40px;
+    width: 40px;
+
+    margin-right: 8px;
+
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.contact-image img {
+    width: 100%;
+}
+
+.prev-item > div:nth-child(2) {
+    flex: 1;
+}
+
+.message-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-name {
+    font-size: 16px;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #7C7C7C;
+
+    margin-left: auto;
+}
+
+.message-content {
+    font-size: 15px;
 }
 
 .notification {
@@ -164,10 +260,6 @@ section.header{
 
 .user-image img {
     width: 32px;
-}
-
-.user-info {
-
 }
 
 .user-name {
@@ -492,6 +584,8 @@ main .content {
 
     display: inline-flex;
     flex-direction: column;
+
+    transition: all 1s ease;
 }
 
 .card-head {

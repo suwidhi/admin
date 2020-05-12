@@ -18,14 +18,53 @@
     </div>
 
     <div class="user">
-      <div class="message" id="pane-open" for="message">
+      <div class="message pane-open" for="messaging">
         <div class="icon-message"></div><span class="counter">4</span>
-        <section class="messaging card">
+        
+        <section class="messaging card active">
           <div class="card-head">
             <div class="card-info"><div class="icon-message"></div><span class="card-title">Messaging</span></div>
-            <div class="card-menu"><a href="/"><div class="icon-close" id="pane-close" for="message"></div></a></div>
+            <div class="card-menu"><a href="#"><div class="icon-close pane-close" for="messaging"></div></a></div>
+          </div>
+
+          <div class="card-body">
+            
+            <div class="message-prev">
+
+              <div class="prev-item">
+                <div class="contact-image">
+                  <div><img src="./img/profile.jpg" alt="contact image"></div>
+                </div>
+                <div>
+                  <div class="message-info">
+                    <div class="contact-name">John</div>
+                    <div class="message-time">12:00 PM</div>
+                  </div>
+                  <div class="message-content">Hi, How are you today?</div>
+                </div>
+              </div>
+
+              <div class="prev-item">
+                <div class="contact-image"><img src="./img/profile.jpg" alt="contact image"></div>
+                <div>
+                  <div class="message-info">
+                    <div class="contact-name">Jane</div>
+                    <div class="message-time">12:01 PM</div>
+                  </div>
+                  <div class="message-content">I am fine and here is the long text for you to read and ...</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="message-search">
+              <input type="text" name="message-search-input" id="message-search-input">
+              <button><div class="icon-search"></div></button>
+            </div>
           </div>
         </section>
+        <!-- end of card messaging -->
       </div>
       <div class="notification"><div class="icon-notification"></div></div>
       <div class="user-pane">
