@@ -27,6 +27,16 @@ pane_close.forEach(element => {
     });
 });
 
+//messaging function
+const message_items = document.querySelectorAll('.prev-item');
+const message_preview = document.querySelector('.message-prev');
+message_items.forEach(element => {
+    element.addEventListener('click', function() {
+        if(message_preview.classList.contains('active')){
+            message_preview.classList.remove('active');
+        }
+    });
+});
 
 //switch display between list and grid
 const display_option = document.querySelectorAll('.display-option');

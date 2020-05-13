@@ -116,6 +116,11 @@ section.header{
     box-shadow: 0px 0px 5px 1px #4D4D4D !important;
 }
 
+.message .card-body {
+    display: flex;
+    flex-direction: row;
+}
+
 .message-search {
     position: relative;
 }
@@ -135,10 +140,12 @@ section.header{
     text-indent: 8px;
 
     box-sizing: border-box;
-    border: 1px solid blue;
+    border: 1px solid #7C7C7C;
 }
 
 .message-search input:focus {
+    border-color: #1565C0;
+
     box-shadow: inset 0px 0px 1px 1px #1565C0;
 }
 
@@ -160,7 +167,29 @@ section.header{
 }
 
 .message-prev {
-    padding: 4px 16px;
+    width: 0px;
+
+    overflow: hidden;
+
+    transition: all 150ms ease-in-out;
+}
+
+.message-prev.active {
+    flex: 1;
+    padding: 4px 0px;
+}
+
+.chat {
+    overflow: hidden;
+
+    flex: 1;
+
+    background-color: #E8E8E8;
+}
+
+.message-prev.active + .chat {
+    flex: 0;
+    width: 0px;
 }
 
 .prev-item {
@@ -168,6 +197,8 @@ section.header{
     padding: 8px;
 
     margin-bottom: 8px;
+
+    cursor: pointer;
 }
 
 .prev-item:hover {
@@ -199,6 +230,7 @@ section.header{
 
 .contact-name {
     font-size: 16px;
+    font-weight: bold;
 }
 
 .message-time {
@@ -509,6 +541,7 @@ main .content.content.listview .monthly-stat {
 }
 
 main .content.listview .card-body {
+
     padding-bottom: 14px;
 }
 
