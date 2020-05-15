@@ -18,18 +18,21 @@
     </div>
 
     <div class="user">
-      <div class="message pane-open" for="messaging">
+      <div class="message pane-open active  " for="message">
         <div class="icon-message"></div><span class="counter">4</span>
         
-        <section class="messaging card active">
+        <section class="messaging card">
           <div class="card-head">
             <div class="card-info"><div class="icon-message"></div><span class="card-title">Messaging</span></div>
-            <div class="card-menu"><a href="#"><div class="icon-close pane-close" for="messaging"></div></a></div>
+            <div class="card-menu"><a href="#"><div class="icon-close pane-close" for="message"></div></a></div>
           </div>
-
+          <div class="chat-control">
+            <a href="#" onclick="resetMessaging();"><div class="icon-arrow"></div>Go back</a>
+            <div class="recipient-info">The Sender</div>
+          </div>
           <div class="card-body">
             
-            <div class="message-prev active">
+            <div class="message-prev">
 
               <div class="prev-item">
                 <div class="contact-image">
@@ -50,6 +53,7 @@
                   <div class="message-info">
                     <div class="contact-name">Jane</div>
                     <div class="message-time">12:01 PM</div>
+                    <div class="message-new"></div>
                   </div>
                   <div class="message-content">I am fine and here is the long text for you to read and ...</div>
                 </div>
@@ -57,20 +61,30 @@
 
             </div>
             <div class="chat">
-              <div class="chat-control"><a href="/"><div class="icon-power"></div>Back to contact list</a></div>
-              <div class="chat-list">
+              <div class="chat-item away">
+                <p>Good morning!</p>
+                <span>12:00 PM</span>
+              </div>
 
+              <div class="chat-item home">
+                <p>Good morning! How are you today?</p>
+                <span>12:00 PM <div class="icon-check"></div></span>
+              </div>
+
+              <div class="chat-item away">
+                <p>I am fine but just a bit tired.</p>
+                <span>12:00 PM</span>
               </div>
             </div>
           </div>
           <div class="card-foot">
-            <div class="message-search active">
+            <div class="message-search">
               <input type="text" name="message-search-input" id="message-search-input">
               <button><div class="icon-search"></div></button>
             </div>
             <div class="message-form">
               <input type="text" name="message-content" id="message-content">
-              <button>Kirim</button>
+              <button><div class="icon-send"></div></button>
             </div>
           </div>
         </section>

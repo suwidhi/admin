@@ -24,19 +24,30 @@ pane_close.forEach(element => {
     element.addEventListener('click', function(evt) { 
         evt.stopPropagation();
         target.classList.remove('active');
+
+        resetMessaging();
     });
 });
 
 //messaging function
 const message_items = document.querySelectorAll('.prev-item');
-const message_preview = document.querySelector('.message-prev');
+const message = document.querySelector('.message');
 message_items.forEach(element => {
     element.addEventListener('click', function() {
-        if(message_preview.classList.contains('active')){
-            message_preview.classList.remove('active');
+        if(!message.classList.contains('in-chat')){
+            message.classList.add('in-chat');
         }
     });
 });
+
+//reset messaging to default behavior
+function resetMessaging() {
+    let msg = document.querySelector('.message');
+
+    if(msg.classList.contains('in-chat')){
+        msg.classList.remove('in-chat');
+    }
+}
 
 //switch display between list and grid
 const display_option = document.querySelectorAll('.display-option');
