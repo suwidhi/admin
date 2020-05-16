@@ -770,6 +770,138 @@ main .content.listview .agenda {
     height: auto;
 }
 
+.agenda.card.active .card-foot{
+    height: auto;
+}
+
+.agenda.card.active .card-foot > a{
+    display: none;
+}
+
+.agenda.active .agenda-form {
+    height: auto;
+    padding: 8px 0px;
+    border-top: 3px solid #1565C0;
+}
+
+.agenda .agenda-form {
+    height: 0;
+
+    overflow: hidden;
+    border: none;
+
+    transition: all 100ms ease-in-out;
+}
+
+.agenda-form-title {
+    display: flex;
+    align-items: center;
+
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+
+.agenda-form-title div {
+    font-size: 22px;
+    height: 24px;
+    width: 24px;
+
+    border-radius: 50%;
+
+    margin-left: auto;
+}
+
+.agenda-form-title div:active {    
+    background-color: #E8E8E8;
+}
+
+.agenda-form label {
+    display: block;
+
+    margin-bottom: 4px;
+    color: #333333;
+}
+
+.agenda-datetime {
+    margin-top: 14px;
+    display: flex;
+}
+
+.agenda-datetime label:last-child {
+    margin-left: auto;
+}
+
+.content.listview .agenda-datetime label:last-child {
+    margin-left: 4px;
+}
+
+.agenda-form input, .agenda-form textarea {
+    height: 24px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 4px;
+    width: 100%;
+
+    border: 1px solid #7C7C7C;
+
+    display: block;
+
+    text-indent: 8px;
+
+    box-sizing: border-box;
+}
+
+.agenda-form input:focus, .agenda-form textarea:focus {
+    border-color: #1565C0;
+    box-shadow: inset 0px 0px 1px 1px #1565C0;
+}
+
+.agenda-form textarea{
+    padding: 8px 0px;
+    height: 40px;
+}
+
+.agenda-form button {
+    padding:0;
+    margin: 0;
+
+    height: 32px;
+    width: 100px;
+
+
+    border: 1px solid #1565C0;
+    background-color: #1565C0;
+
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+}
+
+.agenda-form button:hover {
+    opacity: .8;
+}
+
+.agenda-form button:active {
+    opacity: 1;
+}
+
+.agenda-form button div{
+    height: 24px;
+    width: 24px;
+
+    font-size: 20px;
+}
+
+.agenda-form a {
+
+}
+
+.agenda-form a div {
+
+}
+
 main .content.listview .todo {
     height: auto;
 }

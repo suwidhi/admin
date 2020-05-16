@@ -81,3 +81,15 @@ display_option.forEach(element => {
         element.classList.add('active');
     });
 });
+
+// agenda
+agenda_close_btn = document.querySelector('#agenda-form-close');
+agenda_close_btn.addEventListener('click', function(){
+    target = document.querySelector('.agenda');
+    if(target.classList.contains('active')) {
+        target.classList.remove('active');
+    }
+});
+function openAgendaForm() {
+    document.querySelector('.agenda').classList.add('active');
+}

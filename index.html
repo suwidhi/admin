@@ -100,7 +100,7 @@
               <span class="card-title">Notifications</span>
             </div>
             <div class="card-menu">
-              <a href="/"><div class="icon-close pane-close" for="notification"></div></a>
+              <a href="#"><div class="icon-close pane-close" for="notification"></div></a>
             </div>
           </div>
 
@@ -275,21 +275,24 @@
               </div>
             </div>
             <div class="card-foot">
-              <a href="/"><div class="icon-plus"></div>Buat agenda baru</a>
+              <a href="#" onclick="openAgendaForm();"><div class="icon-plus"></div>Buat agenda baru</a>
               <div class="agenda-form">
-                <label for="agenda-input-date">
-                  <span>Agenda date</span>
-                  <input type="text" name="agenda-input-date" id="agenda-input-date">
-                </label>
-                <label for="agenda-input-time">
-                  <span>Agenda time</span>
-                  <input type="text" name="agenda-input-time" id="agenda-input-time">
-                </label>
+                <span class="agenda-form-title">Tambah agenda baru <div class="icon-close" id="agenda-form-close"></div></span>
+                <div class="agenda-datetime">
+                  <label for="agenda-input-date">
+                    <span>Date (dd-mm-yyyy)</span>
+                    <input type="text" name="agenda-input-date" id="agenda-input-date">
+                  </label>
+                  <label for="agenda-input-time">
+                    <span>Time (hh:mm)</span>
+                    <input type="text" name="agenda-input-time" id="agenda-input-time">
+                  </label>
+                </div>
                 <label for="agenda-input-content">
                   <span>Agenda content</span>
                   <textarea name="agenda-input-content" id="agenda-input-content" cols="30" rows="10"></textarea>
                 </label>
-                <button>Add agenda</button>
+                <button><div class="icon-plus-light "></div>Add agenda</button>
               </div>
             </div>
           </div>
