@@ -18,7 +18,7 @@
     </div>
 
     <div class="user">
-      <div class="message pane-open active  " for="message">
+      <div class="message pane-open" for="message">
         <div class="icon-message"></div><span class="counter">4</span>
         
         <section class="messaging card">
@@ -90,7 +90,32 @@
         </section>
         <!-- end of card messaging -->
       </div>
-      <div class="notification"><div class="icon-notification"></div></div>
+      <div class="notification">
+        <div class="icon-notification pane-open" for="notification"></div>
+        
+        <div class="card notifying">
+          <div class="card-head">
+            <div class="card-info">
+              <div class="icon-notification"></div>
+              <span class="card-title">Notifications</span>
+            </div>
+            <div class="card-menu">
+              <a href="/"><div class="icon-close pane-close" for="notification"></div></a>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <a href="/" class="notification-item">
+              <div class="notification-date">May 16, 2020. 09:20 AM</div>
+              <div class="notification-content">Ada barang yang belum di catat.</div>
+            </a>
+          </div>
+
+          <div class="card-foot">
+            <a href="/"><div class="icon-trash"></div>Clear notifications</a>
+          </div>
+        </div>
+      </div>
       <div class="user-pane">
         <div class="user-image">
           <div><img src="./img/profile.jpg" alt="profile image"></div>
@@ -251,6 +276,9 @@
             </div>
             <div class="card-foot">
               <a href="/"><div class="icon-plus"></div>Buat agenda baru</a>
+              <div class="agenda-form">
+                slkdfjsdlakjf
+              </div>
             </div>
           </div>
 

@@ -16,7 +16,10 @@ const pane_close = document.querySelectorAll('.pane-close');
 pane_open.forEach(element => {
     let target = document.querySelector("." + element.getAttribute('for'));
     element.addEventListener('click', function() {
-        if(!target.classList.contains('active')) {target.classList.add('active');}
+        if(!target.classList.contains('active')) {
+            closeAllPane();
+            target.classList.add('active');
+        }
     });    
 });
 pane_close.forEach(element => {
@@ -28,6 +31,14 @@ pane_close.forEach(element => {
         resetMessaging();
     });
 });
+function closeAllPane() {
+    pane_open.forEach(element => {
+        let temp = document.querySelector('.' + element.getAttribute('for'));
+        if(temp.classList.contains('active')) {
+            temp.classList.remove('active');
+        }
+    });
+}
 
 //messaging function
 const message_items = document.querySelectorAll('.prev-item');
@@ -47,6 +58,11 @@ function resetMessaging() {
     if(msg.classList.contains('in-chat')){
         msg.classList.remove('in-chat');
     }
+
+    let inputs = msg.querySelectorAll('input[type=text]');
+    inputs.forEach(element => {
+        element.value = '';
+    });
 }
 
 //switch display between list and grid

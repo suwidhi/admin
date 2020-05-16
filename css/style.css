@@ -98,7 +98,7 @@ section.header{
     margin-right: 2px;
 }
 
-.messaging.card {
+.messaging.card, .notifying.card {
     position: absolute;
     right: 0px;
     top: 60px;
@@ -109,7 +109,7 @@ section.header{
     transition: all 80ms ease-in-out;
 }
 
-.message.active .messaging {
+.message.active .messaging, .notification.active .notifying {
     visibility: visible;
 
     background-color: #FFFFFF;
@@ -452,6 +452,37 @@ section.header{
 
 .notification .counter {
     background-color: #FF7700;
+}
+
+.notification .card-body {
+    padding: 8px;
+}
+
+.notification-item {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    color: #333333;
+    text-decoration: none;
+
+    padding: 8px;
+}
+
+.notification-item:hover {
+    background-color: #E8E8E8;
+}
+
+.notification-date {
+    color: #666666;
+}
+
+.notification-content {
+    font-size: 16px;
+}
+
+.notification .card-foot a {
+    font-size: 14px;
 }
 
 .user-pane {
