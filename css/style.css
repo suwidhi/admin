@@ -1120,6 +1120,7 @@ main .content {
     align-items: center;
 
     background-color: #FFFFFF;
+    border: 1px solid transparent;
 }
 
 .todo-item:first-child {
@@ -1128,6 +1129,10 @@ main .content {
 
 .todo-item:hover {
     background-color: #e8e8e8;
+}
+
+.todo-item.dragoverred {
+    border-color: #1565C0;
 }
 
 .todo-content{
@@ -1145,6 +1150,7 @@ main .content {
 
     margin-right: 16px;
 }
+
 
 .todo-item a {
     display: block;
