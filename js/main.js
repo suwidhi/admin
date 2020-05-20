@@ -95,27 +95,3 @@ function openAgendaForm() {
 }
 
 // todo
-const grabber = document.querySelectorAll('.grabber');
-grabber.forEach(element => {
-    element.addEventListener('dragstart', function(evt) {
-        evt.dataTransfer.setData('el', evt.target.parentElement.innerHTML);
-    });
-    element.addEventListener('dragover', function(evt) {
-        evt.preventDefault();
-    });
-    element.addEventListener('dragenter', function(evt){
-        if(evt.target.parentElement.innerHTML != evt.dataTransfer.getData('el')) {
-            evt.target.parentElement.parentElement.classList.add('dragoverred');
-        }
-    });
-    element.addEventListener('dragleave', function(evt){
-        if(evt.target.parentElement.parentElement.classList.contains('dragoverred')) {
-            evt.target.parentElement.parentElement.classList.remove('dragoverred');
-        }
-    });
-    element.addEventListener('drop', function(evt) {
-        let temp = evt.target.innerHTML;
-        let data = evt.dataTransfer.getData('el');
-        evt.target.parentElement.innerHTML = data;        
-    });
-});

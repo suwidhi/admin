@@ -369,7 +369,7 @@ section.header{
 }
 
 .message-content {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .message.in-chat .message-search {
@@ -475,10 +475,11 @@ section.header{
 
 .notification-date {
     color: #666666;
+    font-size: 12px;
 }
 
 .notification-content {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .notification .card-foot a {
@@ -545,7 +546,7 @@ section.header{
 
 .user-menu.active .user-menu-list {
     display: initial;
-    width: 160px;
+    width: 180px;
     padding: 8px;
 
     position: absolute;
@@ -578,7 +579,7 @@ section.header{
 }
 
 .user-menu-item a {
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     color: inherit;
 }
@@ -741,6 +742,7 @@ main .head .column:nth-child(2){
 main .content.listview {
     display: flex;
     flex-direction: column;
+    padding-bottom: 16px;
 }
 
 main .content.listview .card {
@@ -1131,10 +1133,6 @@ main .content {
     background-color: #e8e8e8;
 }
 
-.todo-item.dragoverred {
-    border-color: #1565C0;
-}
-
 .todo-content{
     font-size: 14px;
 
@@ -1143,12 +1141,12 @@ main .content {
 }
 
 .todo-content div {
-    font-size: 24px;
+    font-size: 12px;
 
     height: 24px;
     width: 24px;
 
-    margin-right: 16px;
+    margin-right: 4px;
 }
 
 

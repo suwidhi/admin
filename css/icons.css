@@ -110,8 +110,8 @@
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="rgb(21, 101, 192)" viewBox="0 0 24 24" width="18px" height="18px"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>');
 }
 
-.icon-grabber {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="gray" viewBox="0 0 24 24"><path id="grabber" d="M14.991,2,11.523,5.3a.515.515,0,0,0,0,.751.573.573,0,0,0,.784,0L14.455,4V8.781H3v2.086H27V8.781H15.545V4L17.693,6.05a.574.574,0,0,0,.785,0,.515.515,0,0,0,0-.751L15.009,2,15,2.008ZM3,12.953V15.04H27V12.953Zm0,4.173v2.086H14.45a.014.014,0,0,1,0,.008V24L12.307,21.95a.572.572,0,0,0-.784,0,.515.515,0,0,0,0,.751L14.991,26,15,25.992l.009.008,3.469-3.3a.514.514,0,0,0,0-.75.574.574,0,0,0-.785,0L15.545,24V19.22a.015.015,0,0,1,0-.008H27V17.126Z" transform="translate(-3 -2)"/></svg>');
+.icon-circle {
+    background-image: url('data:image/svg+xml;ut8,<svg xmlns="http://www.w3.org/2000/svg" height="24" fill="gray" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="8"/></svg>');
 }
 
 .icon-trash {
@@ -123,5 +123,5 @@
 }
 
 .icon-check {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" fill="black" viewBox="0 0 24 24" width="24"><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" fill="black viewBox="0 0 24 24" width="24"><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"/></svg>');
 }
