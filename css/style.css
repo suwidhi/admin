@@ -678,8 +678,9 @@ section.header{
     padding: 0px 12px;
 }
 
-.aside-menu li:hover {
-    background-color: #E8E8E8;
+.aside-menu li:hover, .aside-menu li.active {
+    background-color: #DDDDDD;
+    box-shadow: inset 0px 0px 2px 1px #DADADA;
 }
 
 .aside-menu a {
@@ -737,6 +738,13 @@ main .head .column:nth-child(2){
 
     font-size: 32px;
     color: var(--background);
+}
+
+.content-wrap {
+    background-color: #FFFFFF;
+    flex: 1;
+    
+    padding: 14px;
 }
 
 main .content.listview {
@@ -943,11 +951,13 @@ main .content.listview .todo {
 
 main .content {
     flex: 1;
-    padding: 12px;
+    padding: 6px;
 
     background-color: #F0F0F0;
 
     overflow-y: auto;
+
+    display: flex;
 }
 
 .card {

@@ -149,8 +149,8 @@
 
         <div class="aside-section">Bilah navigasi</div>
         <ul class="aside-menu">
-          <li class="active"><a href="/"><div class="icon-home"></div>Dashboard</a></li>
-          <li><a href="management.html"><div class="icon-manage"></div>Management</a></li>
+          <li><a href="index.html"><div class="icon-home"></div>Dashboard</a></li>
+          <li class="active"><a href="management.html"><div class="icon-manage"></div>Management</a></li>
         </ul>
 
         <div class="aside-section">Manajemen Entitas</div>
@@ -182,7 +182,7 @@
     <main>
       <div class="head">
         <div class="column">
-          <h1 class="main-title">Dashboard</h1>
+          <h1 class="main-title">Management</h1>
           <div class="date-info">
             <div class="icon-calendar"></div>
             <span>16 Mei, 2020</span>
@@ -198,154 +198,27 @@
         </div>
       </div>
       <div class="content">
+        <div class="content-wrap">
+            <h3>Menu manajemen yang tersedia</h3>
+            <h4>Manajemen Entitas</h4>
+            <ul>
+              <li><a href="user.html">Manajemen Pengguna</a></li>
+            </ul>
 
-        <div class="monthly-stat card">
-          <div class="card-head">
-            <div class="card-info">
-              <div class="icon-agenda"></div>
-              <span class="card-title">Status Bulanan</span>
-            </div>
-            <div class="card-menu">
-              <a href="/"><div class="icon-setting-inactive"></div></a>
-            </div>
-          </div>
+            <h4>Manajemen Barang</h4>
+            <ul>
+              <li><a href="user.html">Barang Masuk</a></li>
+              <li><a href="user.html">Barang Keluar</a></li>
+              <li><a href="user.html">Pencatatan Barang</a></li>
+            </ul>
 
-          <div class="card-body">
-            <div class="stat-item">
-              <div class="stat-title">Total barang masuk</div>
-              <div class="stat-content"><div class="icon-down"></div>15</div>
-            </div>
-
-            <div class="stat-item">
-              <div class="stat-title">Total barang keluar</div>
-              <div class="stat-content"><div class="icon-up"></div>12 (80%)</div>
-            </div>
-
-            <div class="stat-item">
-              <div class="stat-title">Tidak bisa / batal</div>
-              <div class="stat-content"><div class="icon-cancelled"></div>2</div>
-            </div>
-          </div>
-
-          <div class="card-foot">
-            <a href="/"><div class="icon-arrow"></div>Ke halaman status</a>
-          </div>
-
+            <h4>Berdasarkan Status Barang</h4>
+            <ul>
+              <li><a href="user.html">Barang Masih di Proses</a></li>
+              <li><a href="user.html">Barang Sudah Selesai</a></li>
+              <li><a href="user.html">Barang Dibatalkan</a></li>
+            </ul>
         </div>
-
-        <div class="agenda card">
-          <div class="card-head">
-            <div class="card-info">
-              <div class="icon-agenda"></div>
-              <span class="card-title">Tambahkan agenda</span>
-            </div>
-            <div class="card-menu">
-              <a href="/"><div class="icon-setting-inactive"></div></a>
-            </div>
-          </div>
-          <div class="card-body">
-
-            <div class="agenda-item">
-              <div class="agenda-main">
-                <div class="agenda-status">
-                  <div class="agenda-status-time">12:00</div>
-                  <div class="agenda-status-warning">OVERDUE</div>
-                </div>
-                <div class="agenda-content">
-                  Hari ini kita ada banyak acara seperti makan pizza dan spagethi di restoran mahal.
-                </div>
-              </div>
-              <div class="agenda-control">
-                <a href="/"><div class="icon-agenda-done"></div></a>
-              </div>
-            </div>
-
-              <div class="agenda-item">
-                <div class="agenda-main">
-                  <div class="agenda-status">
-                    <div class="agenda-status-time">14:00</div>
-                  </div>
-                  <div class="agenda-content">
-                    Kita harus menyelesaikan banyak pekerjaan kita hari ini dengan tepat waktu.
-                  </div>
-                </div>
-                <div class="agenda-control">
-                  <a href="/"><div class="icon-agenda-done"></div></a>
-                </div>
-              </div>
-            </div>
-            <div class="card-foot">
-              <a href="#" onclick="openAgendaForm();"><div class="icon-plus"></div>Buat agenda baru</a>
-              <div class="agenda-form">
-                <span class="agenda-form-title">Tambah agenda baru <div class="icon-close" id="agenda-form-close"></div></span>
-                <div class="agenda-datetime">
-                  <label for="agenda-input-date">
-                    <span>Date (dd-mm-yyyy)</span>
-                    <input type="text" name="agenda-input-date" id="agenda-input-date">
-                  </label>
-                  <label for="agenda-input-time">
-                    <span>Time (hh:mm)</span>
-                    <input type="text" name="agenda-input-time" id="agenda-input-time">
-                  </label>
-                </div>
-                <label for="agenda-input-content">
-                  <span>Agenda content</span>
-                  <textarea name="agenda-input-content" id="agenda-input-content" cols="30" rows="10"></textarea>
-                </label>
-                <button><div class="icon-plus-light "></div>Add agenda</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-head">
-              <div class="card-info">
-                <div class="icon-agenda"></div>
-                <span class="card-title">To-do</span>
-              </div>
-              <div class="card-menu">
-                <a href="/"><div class="icon-setting-inactive"></div></a>
-              </div>
-            </div>
-  
-            <div class="card-body">
-              <div class="todo-item">
-                <div class="todo-content"><div class="icon-circle" draggable="true"></div>
-                  <p>Beli beras</p>
-                </div>
-                <a href="/"><div class="icon-trash"></div></a>
-              </div>
-
-              <div class="todo-item">
-                <div class="todo-content"><div class="icon-circle" draggable="true"></div>
-                  <p>Beli aqua</p>
-                </div>
-                <a href="/"><div class="icon-trash"></div></a>
-              </div>
-              
-              <div class="todo-item">
-                <div class="todo-content"><div class="icon-circle" draggable="true"></div>
-                  <p>Beli minyak</p>
-                </div>
-                <a href="/"><div class="icon-trash"></div></a>
-              </div>
-
-              <div class="todo-item">
-                <div class="todo-content"><div class="icon-circle" draggable="true"></div>
-                  <p>Beli pulsa</p>
-                </div>
-                <a href="/"><div class="icon-trash"></div></a>
-              </div>
-            </div>
-  
-            <div class="card-foot">
-              <form action="/" id="todo-form">
-                <input type="text" name="todo" id="todo">
-                <button><div class="icon-plus-light"></div>Tambah</button>
-              </form>
-            </div>
-  
-          </div>
       </div>
       <!-- end of content -->
     </main>
